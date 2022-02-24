@@ -74,7 +74,10 @@ const handleSubmit = async () => {
       >
         Submit
       </button>
-      <sr-messages :messages="messages" />
+      <sr-messages
+        v-if="messages"
+        :messages="messages"
+      />
     </form>
   </main>
 </template>
